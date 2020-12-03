@@ -1,11 +1,27 @@
+
+<img src="static/wasm-secp256k1.svg">
+
 # wasm-secp256k1
 
-<span style="color:yellow;background:BLACK;padding:10px;">WORK IN PROGRESS</span>.
+This repository generates portable WASM file that contain various cryptographic operations for the secp256k1 curve.
+
+1. Signature generation
+2. Signature validation
+3. Private key generation
+
+The 
+
+
+Public &amp; Private key generation
+
+This repo creates portable [WASM](https://webassembly.org/) using [wasi](https://wasi.dev/).
+
+It is currently being employed in an isomorphic environment for [@ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
 
 
 ## MacOS setup homebrew edition
 
-0. clone repo
+0. clone repo with submodules
 ```shell
 git clone --recursive https://github.com/relocke/wasm-secp256k1.git
 ```
