@@ -1,5 +1,5 @@
 
-<img src="static/wasm-secp256k1.svg" height=80px>
+<img src="static/wasm-secp256k1.svg" height=100px>
 
 # wasm-secp256k1
 
