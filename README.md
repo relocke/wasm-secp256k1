@@ -1,7 +1,9 @@
 
-<img src="static/wasm-secp256k1.svg">
+<img src="static/wasm-secp256k1.svg" height=100px>
 
 # wasm-secp256k1
+
+## WORK IN PROGRESS!
 
 This repository generates portable WASM file that contain various cryptographic operations for the secp256k1 curve.
 
