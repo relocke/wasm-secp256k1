@@ -5,21 +5,23 @@
 
 ## WORK IN PROGRESS!
 
-This repository generates portable WASM file that contain various cryptographic operations for the secp256k1 curve.
+This repository generates portable [Web Assembly](https://webassembly.org/) (WASM) files that contain various cryptographic operations on the secp256k1 curve.
 
+**These include:**
 1. Signature generation
 2. Signature validation
 3. Private key generation
 
-The 
 
+It is currently being employed in an isomorphic environment for [ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
 
-Public &amp; Private key generation
+### About 
 
-This repo creates portable [WASM](https://webassembly.org/) using [wasi](https://wasi.dev/).
+We have taken the optimised C library [libsecp256k1](https://github.com/bitcoin-core/secp256k1) from the bitcoin core repo and built a wasm file using LLVM and WASI to create a stand alone wasm files that may be ported into many environments.
 
-It is currently being employed in an isomorphic environment for [@ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
+Well that is the idea anyways.
 
+Read more about wasi [here](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/).
 
 ## MacOS setup homebrew edition
 
@@ -40,7 +42,7 @@ export PATH=/usr/local/opt/llvm/bin:$PATH
 ```shell
 llc --version
 ```
-<img src="static/wasm32-llc.png">
+<img src="static/wasm32-llc.png" height="30px">
 
 4. run build script
 ```shell
