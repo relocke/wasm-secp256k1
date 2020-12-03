@@ -6,23 +6,33 @@
 ## MacOS setup homebrew edition
 
 0. clone repo
-> $ git clone --recursive https://github.com/relocke/wasm-secp256k1.git
+```shell
+git clone --recursive https://github.com/relocke/wasm-secp256k1.git
+```
 
 1. Install LLVM
-> $ brew install llvm
+```shell
+brew install llvm
+```
 2. Activate instillation with
-> $ export PATH=/usr/local/opt/llvm/bin:$PATH
+```shell  
+export PATH=/usr/local/opt/llvm/bin:$PATH 
+```
 3. check you have wasm32
-> $ llc --version
+```shell
+llc --version
+```
 <img src="static/wasm32-llc.png">
 
 4. run build script
-> $ source build.sh
+```shell
+source build.sh
+```
 
 5. build wasm
-
-> $ source build_wasm.sh
-
+```shell
+source build_wasm.sh
+```
 --- 
 
 ## About .lib
