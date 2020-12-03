@@ -1,4 +1,4 @@
 #!/bin/bash
-cd wasi-libc
+cd .submodules/wasi-libc
 make install INSTALL_DIR=../.lib/wasi-libc
-cd ..
+cd ../../
