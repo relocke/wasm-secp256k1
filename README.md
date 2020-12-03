@@ -13,13 +13,13 @@ This repository generates portable [Web Assembly](https://webassembly.org/) (WAS
 3. Private key generation
 
 
-It is currently being employed in an [isomorphic JS](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) environment for [ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
-
 ### About 
 
-We have taken the optimised C library [libsecp256k1](https://github.com/bitcoin-core/secp256k1) from the bitcoin core repo and built a wasm file using LLVM and WASI to create a stand alone wasm files that may be ported into many environments.
+Two submodules [libsecp256k1](https://github.com/bitcoin-core/secp256k1) and [WASI-libc](https://github.com/WebAssembly/wasi-libc) are used along with the LLVM tool chain to produce stand alone wasm files that may be ported to many different environments.
 
-Well that is the idea anyways.
+
+It is currently being employed in an [isomorphic JS](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) environment for [ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
+
 
 Read more about wasi [here](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/).
 
