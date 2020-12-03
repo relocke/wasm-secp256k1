@@ -1,1 +1,39 @@
 # wasm-secp256k1
+
+
+## MacOS setup homebrew edition
+
+0. clone repo
+> $ git clone --recursive https://github.com/relocke/wasm-secp256k1.git
+
+1. Install LLVM
+> $ brew install llvm
+2. Activate instillation with
+> $ export PATH=/usr/local/opt/llvm/bin:$PATH
+3. check you have wasm32
+> $ llc --version
+<img src="static/wasm32-llc.png">
+
+4. run build script
+> $ source build.sh
+
+--- 
+
+## About .lib
+
+#### GMP
+Contains header files and libraries for [GMP](https://gmplib.org/)
+
+#### wasi/libclang_rt.builtins-wasm32
+
+Can be built from [wasi-sdk](https://github.com/WebAssembly/wasi-sdk) or download the directly from [here](https://github.com/WebAssembly/wasi-sdk/releases).
+
+## Troubleshooting
+
+### Missing libclang_rt.builtins-wasm32.a
+<img src="static/error-linker.png">
+
+To resolve this issue, you need to add `libclang_rt.builtins.a` library to the llvm path specified by the error.
+
+Add the library `wasi/libclang_rt.builtins.a` into the path specified by your compiler.
+
