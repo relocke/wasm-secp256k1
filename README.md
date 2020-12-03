@@ -1,5 +1,7 @@
 # wasm-secp256k1
 
+<span style="color:yellow;background:BLACK;padding:10px;">WORK IN PROGRESS</span>.
+
 
 ## MacOS setup homebrew edition
 
