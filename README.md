@@ -19,6 +19,10 @@
 4. run build script
 > $ source build.sh
 
+5. build wasm
+
+> $ source build_wasm.sh
+
 --- 
 
 ## About .lib
@@ -29,6 +33,7 @@ Contains header files and libraries for [GMP](https://gmplib.org/)
 #### wasi/libclang_rt.builtins-wasm32
 
 Can be built from [wasi-sdk](https://github.com/WebAssembly/wasi-sdk) or download the directly from [here](https://github.com/WebAssembly/wasi-sdk/releases).
+
 
 ## Troubleshooting
 
