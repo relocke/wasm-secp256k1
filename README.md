@@ -13,7 +13,7 @@ This repository generates portable [Web Assembly](https://webassembly.org/) (WAS
 3. Private key generation
 
 
-It is currently being employed in an isomorphic environment for [ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
+It is currently being employed in an [isomorphic JS](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) environment for [ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
 
 ### About 
 
