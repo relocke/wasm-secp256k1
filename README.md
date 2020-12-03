@@ -3,7 +3,7 @@
 
 # wasm-secp256k1
 
-## WORK IN PROGRESS!
+## WORK IN PROGRESS! 🔨👷🚧
 
 This repository generates portable [Web Assembly](https://webassembly.org/) (WASM) files that contain various cryptographic operations on the secp256k1 curve.
 
