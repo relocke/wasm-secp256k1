@@ -41,6 +41,11 @@ Can be built from [wasi-sdk](https://github.com/WebAssembly/wasi-sdk) or downloa
 <img src="static/error-linker.png">
 
 To resolve this issue, you need to add `libclang_rt.builtins.a` library to the llvm path specified by the error.
-
 Add the library `wasi/libclang_rt.builtins.a` into the path specified by your compiler.
 
+
+### libsecp256k1-config.h modifications
+
+<img src="static/config-errors.png">
+
+If you get an error like in the above image, you can try and update the `libsecp256k1-config.h` file located in `.submodules/secp256k1/src/libsecp256k1-config.h` to a different configuration. 
