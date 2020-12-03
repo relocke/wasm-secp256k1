@@ -1,2 +1,4 @@
 .lib/wasi-libc
 .DS_Store
+.vscode
+.git
