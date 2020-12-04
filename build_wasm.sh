@@ -8,5 +8,5 @@ clang \
 -I .submodules/secp256k1/include \
 -I .submodules/secp256k1 \
 -D HAVE_CONFIG_H=true \
--Wl,--export="generate_public_key" \
--o wasm/generate_public_key.wasm  src/generate_public_key.c .submodules/secp256k1/src/secp256k1.c
+-Wl,--export="get_publickey" \
+-o wasm/get_publickey.wasm  src/get_publickey.c .submodules/secp256k1/src/secp256k1.c

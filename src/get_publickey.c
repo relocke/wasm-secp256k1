@@ -6,7 +6,7 @@ unsigned char* get_ptr() {
 }
 
 
-unsigned char* generate_public_key(int x) {
+unsigned char* get_publickey(int x) {
 
     int len = 32;
     unsigned char* priv_ptr = get_ptr();
