@@ -16,8 +16,6 @@ This repository generates portable [Web Assembly](https://webassembly.org/) (WAS
 
 Two submodules [libsecp256k1](https://github.com/bitcoin-core/secp256k1) and [WASI-libc](https://github.com/WebAssembly/wasi-libc) are used along with the LLVM tool chain to produce stand alone wasm files that may be ported to many different environments.
 
-It is currently being employed in an [isomorphic JS](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) environment for [ReLocke/SmartQL-signature](https://github.com/relocke/SmartQL-Signature).
-
 Read more about wasi [here](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/).
 
 ## MacOS setup homebrew
